@@ -113,13 +113,15 @@ strong {
   width: 230px;
   height: 40px;
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .back {
   background-color: #551007;
   color: #ffffff;
-  margin-right: 8rem;
-  margin-top: 2rem;
+  margin: 10px auto;
 }
 
 .finish {
@@ -134,5 +136,15 @@ strong {
 
   .list {
     width: 600px;
+  }
+
+  .buttonComplete {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .back {
+    margin-right: 50px;
   }
 }
