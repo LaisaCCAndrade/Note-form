@@ -22,9 +22,9 @@ npm install
 
 Usage
 1. Start the development server:
-npm start
+npm run dev
 
-2. Open the web browser and navigate to http://localhost:3000 to view the application.
+2. Open the web browser and navigate to http://localhost:5173/ to view the application.
 
 
 Features

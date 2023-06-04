@@ -13,7 +13,7 @@
 body {
   background: linear-gradient(rgb(117, 169, 217, 46%), rgb(0, 0, 0, 63%));
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 100vh;
-  max-height: 100%;
+  height: 100%;
 }

@@ -67,8 +67,8 @@ const MultiStepForm = () => {
           {steps.map((step, index) => (
             <div key={index} className="containerForm">
               <h2>Annotation {index + 1}</h2>
-              <label>
-                Start Date:
+              <div>
+                <label>Start Date:</label>
                 <input
                   type="date"
                   value={step.startDate}
@@ -77,9 +77,9 @@ const MultiStepForm = () => {
                   }
                   required
                 />
-              </label>
-              <label>
-                End Date:
+              </div>
+              <div>
+                <label>End Date:</label>
                 <input
                   type="date"
                   value={step.endDate}
@@ -88,9 +88,10 @@ const MultiStepForm = () => {
                   }
                   required
                 />
-              </label>
-              <label>
-                Value Type:
+              </div>
+
+              <div>
+                <label>Value Type:</label>
                 <select
                   value={step.valueType}
                   onChange={(e) =>
@@ -102,9 +103,10 @@ const MultiStepForm = () => {
                   <option value="Fixed">Fixed</option>
                   <option value="Percentage">Percentage</option>
                 </select>
-              </label>
-              <label>
-                Amount:
+              </div>
+
+              <div>
+                <label>Amount:</label>
                 <input
                   type="number"
                   value={step.amount}
@@ -113,7 +115,8 @@ const MultiStepForm = () => {
                   }
                   required
                 />
-              </label>
+              </div>
+
               {index > 0 && (
                 <button
                   className="removed"
