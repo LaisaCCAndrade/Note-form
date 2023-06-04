@@ -11,7 +11,7 @@ Table of Contents
 
 Installation
 1. Clone the repository:
-git clone https://github.com/your-username/multi-step-form.git
+git clone https://github.com/LaisaCCAndrade/Note-form
 
 2. Navigate to the project directory:
 cd note-form
