@@ -1,0 +1,21 @@
+* {
+  font-family: "Barlow", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+::placeholder {
+  color: #000000;
+}
+
+body {
+  background: linear-gradient(rgb(117, 169, 217, 46%), rgb(0, 0, 0, 0.631));
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+}
