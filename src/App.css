@@ -53,6 +53,7 @@
   border-radius: 5px;
   border: none;
   padding: 2% 3%;
+  cursor: pointer;
 }
 
 .buttons {
@@ -70,6 +71,7 @@
   border-radius: 8px;
   font-size: 1rem;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .buttons button:hover {
@@ -127,6 +129,7 @@ strong {
   align-items: center;
   justify-content: center;
   margin-bottom: 84px;
+  cursor: pointer;
 }
 
 .back {
