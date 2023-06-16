@@ -11,14 +11,12 @@ const MultiStepForm = () => {
   ]);
   const [summaryVisible, setSummaryVisible] = useState(false);
 
-  // Função para lidar com a alteração de entrada nos campos do formulário
   const handleInputChange = (index, field, value) => {
     const updatedSteps = [...steps];
     updatedSteps[index][field] = value;
     setSteps(updatedSteps);
   };
 
-  // Função para adicionar um novo passo ao formulário
   const handleAddStep = () => {
     setSteps([
       ...steps,
@@ -26,18 +24,15 @@ const MultiStepForm = () => {
     ]);
   };
 
-  // Função para remover um passo do formulário
   const handleRemoveStep = (index) => {
     const updatedSteps = [...steps];
     updatedSteps.splice(index, 1);
     setSteps(updatedSteps);
   };
 
-  // Função para lidar com o envio do formulário
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validação dos passos do formulário
     const isValid = steps.every((step) => {
       if (
         step.startDate === "" ||
@@ -61,13 +56,11 @@ const MultiStepForm = () => {
     });
 
     if (isValid) {
-      // Salvando o formulário
       setSummaryVisible(true);
       toast.success("Form saved successfully!");
     }
   };
 
-  // Função para editar as escolhas do formulário
   const handleEditChoices = () => {
     setSummaryVisible(false);
   };

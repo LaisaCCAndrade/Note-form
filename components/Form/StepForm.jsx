@@ -8,7 +8,6 @@ const StepForm = ({ step, index, handleInputChange, handleRemoveStep }) => {
     <div className="containerForm">
       <h2>Annotation {index + 1}</h2>
       <div>
-        {/* Campo de entrada para a data de início */}
         <Input
           id="startDate"
           label="Start Date:"
@@ -21,7 +20,6 @@ const StepForm = ({ step, index, handleInputChange, handleRemoveStep }) => {
         />
       </div>
       <div>
-        {/* Campo de entrada para a data de término */}
         <Input
           id="endDate"
           label="End Date:"
@@ -35,7 +33,6 @@ const StepForm = ({ step, index, handleInputChange, handleRemoveStep }) => {
 
       <div>
         <label>Value Type:</label>
-        {/* Dropdown para selecionar o tipo de valor */}
         <select
           value={step.valueType}
           onChange={(e) =>
@@ -49,7 +46,6 @@ const StepForm = ({ step, index, handleInputChange, handleRemoveStep }) => {
         </select>
       </div>
       <div>
-        {/* Campo de entrada para o valor */}
         <Input
           id="amount"
           label="Amount:"
@@ -62,7 +58,6 @@ const StepForm = ({ step, index, handleInputChange, handleRemoveStep }) => {
         />
       </div>
 
-      {/* Botão para remover o passo */}
       {index > 0 && (
         <button
           className="removed"
